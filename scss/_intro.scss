@@ -1,0 +1,68 @@
+
+.intro {
+  background-image: url("/img/bg-intro.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  .intro__call-me-now {
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .intro__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: $color-white;
+    min-height: 500px;
+    
+    .intro__title {
+      margin: 0;
+      font-size: 57px;
+      line-height: 67px;
+    }
+
+    .intro__line {
+      border-color: $color-white;
+      background-color: $color-white;
+      height: 2px;
+      max-width: 120px;
+      width: 100%;
+      margin: 10px 0 15px;
+    }
+
+    .intro__subtitle {
+      margin: 0;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: lighter;
+    }
+
+    .intro__button {
+      min-width: 200px;
+      min-height: 48px;
+      background-color: $color-btn;
+      color: $color-white;
+      border: none;
+      margin: 27px;
+      border-radius: 2px;
+      transition: $trans;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-btn;
+        font-size: 18px;
+      }
+    }
+  }
+}
+

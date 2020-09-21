@@ -1,0 +1,53 @@
+
+  .production__title {
+    margin: 29px 0 32px;
+  }
+  
+  .production__body {
+    display: flex;
+
+    .production__card {
+      display: flex;
+      margin: 0 15px;
+      width: 370px;
+      height: 291px;
+
+      border: 1px solid $color-line;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+
+      .production__card_icon {
+        margin: 0;
+        padding: 25px 39px;
+      }
+
+      .production__list_title {
+        text-transform: uppercase;
+        line-height: 19px;
+        font-weight: 700;
+        margin: 30px auto 0;
+      }
+
+      .production__list {
+        height: 200px;
+        width: 200px;
+        line-height: 35px;
+      }
+
+      .product__list_middle-card-position-items {
+        display: flex;
+        flex-flow: column wrap;
+        height: 70%;
+
+        & > li {
+          width: 60%;
+        }
+      }
+
+      .production__list > li > a {
+        text-decoration: none;
+        font-size: 14px;
+        color: $color-black;
+      }
+    }
+  }
+

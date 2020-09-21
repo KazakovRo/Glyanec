@@ -1,0 +1,149 @@
+  
+  .header__content {
+    flex-direction: column;
+
+    .shadow {
+      border-bottom: 3px solid $color-line;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+
+      position: absolute;
+      top:auto;
+      left:0;
+      width:100%;  
+      top: 92px;
+      margin: 2px 0 0;
+    }
+
+    .header__information {
+      display: flex;
+      justify-content: space-evenly;
+
+      .header__logo {
+        display: flex;
+        cursor: pointer;
+      }
+
+      .header__info {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+
+        & > p {
+          text-align: center;
+        }
+
+        .header__info_item-1 {
+          font-size: 16px;
+          line-height: 19px;
+          margin: 14px 0 10px;
+        }
+
+        .header__info_item-2 {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 16px;
+          margin: 10px 0 8px;
+        }
+      }
+
+      .header__mail-numb {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-basis: 25%;
+        
+        .header__mail {
+          display: flex;
+          justify-content: space-between;
+          margin: 0;
+          padding: 10px 0 0 0;
+
+          .header__mail-numb_personal-area {
+            display: flex;
+            align-items: center;
+
+            & > img {
+              padding: 0 6px 0 0;
+            }
+          }
+
+          & a {
+            font-size: 14px;
+            line-height: 16px;
+            color: $color-black;
+          }
+        }
+
+        .header__numb {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          & p {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            padding: 0 0 0 10px;
+          }
+
+          & img {
+            padding: 0 0 0 10px;
+          }
+        }
+      }
+
+      .header__basket {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .header__basket_item-2 {
+          position: relative; 
+          top: -17px;
+          right: 19px;
+        }
+      }
+    }
+
+    .header__nav_list {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      margin: 0;
+
+      .header__nav_item {
+        line-height: 20px;
+        padding: 15px;
+        cursor: pointer;
+        
+        &:hover {
+          border-top: 2px solid $color-btn;
+          transition: $trans;
+        }
+
+        &:hover > a {
+          color: $color-btn;
+        }
+
+        &:last-child {
+          border: none;
+        }
+      }
+
+      .header__nav_line {
+        width: 1px;
+        margin: 0;
+        background-color: $color-line;
+        border: none;
+        height: 19px;
+      }
+
+      .header__nav_item > a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: $color-black;
+      }
+    }
+  }
+

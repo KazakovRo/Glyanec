@@ -1,0 +1,100 @@
+$trans: 0.2s ease;
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-btn: #1AB0CE;
+$color-line: #DCE1E6;
+$color-date: #BEC7D1;
+$color-bg-footer: #F7F7F7;
+
+@import './header';
+@import './intro';
+@import './production';
+@import './about-us';
+@import './news';
+@import './footer';
+@import './media/media';
+@import './hamburger-menu';
+
+body {
+  margin: 0;
+
+  * {
+    font-family: 'Clear Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  button,
+  input {
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  a {
+    color: $color-black;
+  }
+
+  a:hover {
+    color: $color-btn;
+    transition: $trans;
+  }
+}
+
+.header__wrapper,
+.intro__wrapper,
+.production__wrapper,
+.about-us__wrapper,
+.news__wrapper,
+.footer__wrapper {
+  max-width: 1330px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+.header__content,
+.intro__content,
+.production__content,
+.about-us__content,
+.news__content,
+.footer__content {
+  display: flex;
+}
+
+.production__content,
+.about-us__content,
+.news__content  {
+  flex-direction: column;
+  align-items: center;
+}
+
+.production__title_item,
+.about-us__title_item,
+.news__title_item  {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.arrow,
+.facebook,
+.phone {
+  cursor: pointer;
+}
+
+
+
