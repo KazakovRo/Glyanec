@@ -30,8 +30,7 @@
   }
 }
 
-
-@media (min-width: 992px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .header__wrapper, 
   .intro__wrapper,
   .production__wrapper,
@@ -115,6 +114,12 @@
       .footer__logo {
         margin: 10px 0 0 0;
 
+        .footer__logo_item {
+          width: 258px; 
+          height: 76px;
+          margin: 0 auto;
+        } 
+
         & > p {
           text-align: center;
         }
@@ -158,6 +163,11 @@
           .header__mail {
             justify-content: space-evenly;
             padding: 10px 0 5px 0;
+            margin: 0 auto;
+
+            .header__mail-numb_personal-area {
+              margin: 0 auto 15px;
+            }
           }
 
           .header__numb {
@@ -390,7 +400,7 @@
             padding: 10px 0 8px 0;
 
             .header__mail-numb_personal-area {
-              margin: 0 0 16px;
+              margin: 0 auto 15px;
             }
           }
 

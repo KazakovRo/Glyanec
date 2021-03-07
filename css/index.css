@@ -194,7 +194,7 @@
 }
 
 .intro {
-  background-image: url("/img/bg-intro.svg");
+  background-image: url("../img/bg-intro.svg");
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -598,7 +598,7 @@ footer .footer__content .footer__contact .footer__contact_row-3 > p {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .header__wrapper,
   .intro__wrapper,
   .production__wrapper,
@@ -727,6 +727,16 @@ footer .footer__content .footer__contact .footer__contact_row-3 > p {
   .footer__wrapper .footer__content .footer__logo {
     margin: 10px 0 0 0;
   }
+  .header__wrapper .footer__content .footer__logo .footer__logo_item,
+  .intro__wrapper .footer__content .footer__logo .footer__logo_item,
+  .production__wrapper .footer__content .footer__logo .footer__logo_item,
+  .about-us__wrapper .footer__content .footer__logo .footer__logo_item,
+  .news__wrapper .footer__content .footer__logo .footer__logo_item,
+  .footer__wrapper .footer__content .footer__logo .footer__logo_item {
+    width: 258px;
+    height: 76px;
+    margin: 0 auto;
+  }
   .header__wrapper .footer__content .footer__logo > p,
   .intro__wrapper .footer__content .footer__logo > p,
   .production__wrapper .footer__content .footer__logo > p,
@@ -805,6 +815,15 @@ footer .footer__content .footer__contact .footer__contact_row-3 > p {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     padding: 10px 0 5px 0;
+    margin: 0 auto;
+  }
+  .header__wrapper .header__content .header__information .header__mail-numb .header__mail .header__mail-numb_personal-area,
+  .intro__wrapper .header__content .header__information .header__mail-numb .header__mail .header__mail-numb_personal-area,
+  .production__wrapper .header__content .header__information .header__mail-numb .header__mail .header__mail-numb_personal-area,
+  .about-us__wrapper .header__content .header__information .header__mail-numb .header__mail .header__mail-numb_personal-area,
+  .news__wrapper .header__content .header__information .header__mail-numb .header__mail .header__mail-numb_personal-area,
+  .footer__wrapper .header__content .header__information .header__mail-numb .header__mail .header__mail-numb_personal-area {
+    margin: 0 auto 15px;
   }
   .header__wrapper .header__content .header__information .header__mail-numb .header__numb,
   .intro__wrapper .header__content .header__information .header__mail-numb .header__numb,
@@ -1190,7 +1209,7 @@ footer .footer__content .footer__contact .footer__contact_row-3 > p {
   .about-us__wrapper .header__content .header__information .header__mail-numb .header__mail .header__mail-numb_personal-area,
   .news__wrapper .header__content .header__information .header__mail-numb .header__mail .header__mail-numb_personal-area,
   .footer__wrapper .header__content .header__information .header__mail-numb .header__mail .header__mail-numb_personal-area {
-    margin: 0 0 16px;
+    margin: 0 auto 15px;
   }
   .header__wrapper .header__content .header__information .header__mail-numb .header__numb,
   .intro__wrapper .header__content .header__information .header__mail-numb .header__numb,
