@@ -1,6 +1,5 @@
-
 .intro {
-  background-image: url("../img/bg-intro.svg");
+  background-image: url('../img/bg-intro.jpg');
   background-position: center;
   background-repeat: no-repeat;
 
@@ -24,11 +23,12 @@
 
     color: $color-white;
     min-height: 500px;
-    
+
     .intro__title {
       margin: 0;
       font-size: 57px;
       line-height: 67px;
+      text-shadow: -1px -1px 0 #00000094, 1px -1px 0 #00000094, -1px 1px 0 #00000094, 1px 1px 0 #00000094;
     }
 
     .intro__line {
@@ -65,4 +65,3 @@
     }
   }
 }
-
